@@ -266,7 +266,7 @@ public class ToLeadController {
                         case 9:
                             if (!(StringUtil.isEmpty(getStringCellValue(cell)))) {
                                 // map.put("总重量", getStringCellValue(cell));
-                                saleListProduct.setSumwight((int) Math.round(Double.parseDouble(getStringCellValue(cell))));
+                                saleListProduct.setSumwight(Double.parseDouble(getStringCellValue(cell)));
                             }
                             break;
                         case 10:

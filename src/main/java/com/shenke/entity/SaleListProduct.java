@@ -101,7 +101,8 @@ public class SaleListProduct {
 	@Column(length = 50)
 	private String state;// 订单状态
 
-	private Integer sumwight;// 总重量
+	@Column(nullable = true)
+	private Double sumwight;// 总重量
 
 	@Column(nullable = true)
 	private Double meter;// 实际厚度
@@ -397,11 +398,11 @@ public class SaleListProduct {
 		this.state = state;
 	}
 
-	public Integer getSumwight() {
+	public Double getSumwight() {
 		return sumwight;
 	}
 
-	public void setSumwight(Integer sumwight) {
+	public void setSumwight(Double sumwight) {
 		this.sumwight = sumwight;
 	}
 
